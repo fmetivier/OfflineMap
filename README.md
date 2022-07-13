@@ -50,7 +50,7 @@ In the case of the example given you should now have an IPGPOffline directory an
 
 Eventually move your tiledir inside the offlineName directory and enjoy.
 
-## How to for Androing and iOS
+## How to for Android and iOS
 
 You first need to download the OfflineMap directory with all its sub-directories and tiles to your phone/pad  then it depends and the system.
 
