@@ -67,11 +67,9 @@ Normally you'll have access to the directory treefile and you can go and find yo
 
 ### iOS
 
-iOS is more tricky as Apple does all it can to prevent you from knowing your direcotry structure (to prevent you from doing silly and dangerous things I suppose)!
+iOS is more tricky as Apple does all it can to prevent you from knowing your direcotry structure (to prevent you from doing silly and dangerous things I suppose)! Furthermore you need to have FIrefox or Chrome installed as Safari is locked and it will not work on it.
 
-The trick I found was to install the Html viewer app and open the site file with it. The buttons appears but not the images. If you then go into the log  you'll discover that html viewer does not have the permission to access the location of your html file and bingo ! the entire treefile is written.
-
-Just copy / paste it in firefox or chrome and the site shall be ready and running.
+The trick I found was to install the Html viewer app and open the site file with it. The buttons appears but not the images. If you then go into the prefs you will see an "input URL" button. click on the button and copy / paste the link in firefox or chrome and the site shall be ready and running.
 
 in my case (iphone 8) it looks like
 ```
