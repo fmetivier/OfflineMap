@@ -4,6 +4,7 @@
 * [Introduction](##introduction)
 * [Procedure](##Procedure)
 * [How to for Android and iOS](##How-to-for-Android-and-iOS)
+* [Create a tile dir using mapTiler](##Create-a-tile-dir-using-mapTiler)
 
 
 
@@ -25,7 +26,7 @@ OfflineMap does not help you gather the tile files. For this I strongly recomman
 
 * clone the project directory
 * Get The Tiles
-* Group them into a tiledir of your choice,
+* Group them into a tiledir of your choice and place this dir inside the project directory,
 * Get the location (lat,lon) of your map center
 * Notice the maxzoom level of your tiles
 * Notice the start zoom level
@@ -47,8 +48,8 @@ create_html(
 In the case of the example given you should now have an IPGPOffline directory and witin it
 * an IPGPOffline.html file
 * a copy of the lib directory.
+* a copy of your tile_dir directory.
 
-Eventually move your tiledir inside the offlineName directory and enjoy.
 
 ## How to for Android and iOS
 
@@ -79,3 +80,20 @@ BD4EB054-5DE4-4E61-A422-070D1233C8B9/Documents/
 OfflineName/OfflineName.html
 ```
 I suspect the weard code comes from your SD-card.  Anyway it's hacked. Have fun !
+
+
+## Create a tile dir using mapTiler
+
+mapTiler fetches tiles and places them according to their zoom elvel in a directory named after the system time at which the fetching is launched.  
+
+To merge these directories and produce a tiledir place all the directories in the stile directory of the root directory of OfflineMap.
+
+The code to merge the tiles is then
+
+```python
+from OfflineMap import *
+
+ge_rearrange()
+```
+
+By default tiles will be placed in a ve_tiles directory.

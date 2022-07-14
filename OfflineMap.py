@@ -189,6 +189,11 @@ def create_html(
     except:
         pass
 
+    try:
+        shutil.copytree("./" + tiledir, "./" + offlineName + "/" + tiledir)
+    except:
+        pass
+
     f = open(offlineName + "/" + offlineName + ".html", "w")
 
     site_str = """
